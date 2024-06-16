@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import router_items
+import routers.router_items 
 
 # Initialize the FastAPI app
 app = FastAPI(
@@ -8,4 +8,15 @@ app = FastAPI(
 )
 
 # Include the router for managing items
-app.include_router(router_items.router)
+app.include_router(routers.router_items.router)
+
+
+
+
+
+
+
+
+
+
+
