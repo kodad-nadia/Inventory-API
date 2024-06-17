@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Récupération de l'URL de la base de données
-DATABASE_URL = os.getenv('DATABASE_URL', "mysql+pymysql://root:@localhost:3306/Item-docker-api")
+DATABASE_URL = os.getenv('DATABASE_URL', "mysql+pymysql://root:@localhost:3306/InventoryAPI-api")
 
 # Créer un moteur de base de données afin de gérer la connexion
 engine = create_engine(DATABASE_URL)
